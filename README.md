@@ -3,8 +3,8 @@
   <p> projeto para aprendizado, microservice integrado com movies_services </p>
   
 ### Instruções 
-    + Faça clone deste repositório e do movies_service (siga as instruções do repositório https://github.com/andrebertonha/movies_service)
-    + npm install
+  + Faça clone deste repositório e do movies_service (siga as instruções do repositório https://github.com/andrebertonha/movies_service)
+  + npm install
     
 ### Schema
 ```nodejs
@@ -57,3 +57,5 @@
  + Com o container movie_service rodando:
     + npm start
     + npm test
+    
+   <p><b>créditos</b>: LuizTools https://www.luiztools.com.br/post/arquitetura-de-micro-servicos-em-node-js-mongodb-2/ </p>
