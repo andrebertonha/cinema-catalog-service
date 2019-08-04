@@ -3,7 +3,8 @@
   <p> projeto para aprendizado, microservice integrado com movies_services </p>
   
 ### Instruções 
-  + Faça clone deste repositório e do movies_service (siga as instruções do repositório https://github.com/andrebertonha/movies_service)
+  + Faça clone deste repositório e do movies_service 
+  + (siga as instruções do repositório https://github.com/andrebertonha/movies_service)
   + npm install
     
 ### Schema
