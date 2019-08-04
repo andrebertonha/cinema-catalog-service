@@ -8,50 +8,37 @@
   + npm install
     
 ### Schema
-```nodejs
-     
+```nodejs     
  {
-     _id: ObjectId("sasacsa85s7sdc7sd"),
-     cidade: "Porto Alegre",
-     uf: "RS",
-     pais: "BR",
-     cinemas: [
+    cidade: String,
+    uf: String,
+    pais: String,
+    cinemas: [
         {
-           _id: ObjectId("68df5gd5g6ddf"),
-           nome: "Cinemark Bourbon Ipiranga",
-           salas: [
-              {
-                 nome: 1,
-                 sessoes: [
-                    {
-                       data: ISODate("2018-06-01T09:00:00Z"),
-                       idFilme: ObjectId("9ds68dsvdsvs876v"),
-                       filme: "Vingadores: Guerra Infinita",
-                       valor: 25.00,
-                       assentos: [
-                          { numero: 1, disponivel: true },
-                          { numero: 2, disponivel: false },
-                       ]
-                    },
-                    {
-                       data: ISODate("2018-06-01T11:00:00Z"),
-                       idFilme: ObjectId("9ds68dsvdsvs876v"),
-                       filme: "Vingadores: Guerra Infinita",
-                       valor: 25.00,
-                       assentos: [
-                          { numero: 1, disponivel: true },
-                          { numero: 2, disponivel: true },
-                       ]
-                    }
-                 ]
-              }
-           ]
+            nome: String,
+            salas: [
+                {
+                    nome: String,
+                    sessoes: [
+                        {
+                            data: Date,
+                            idFilme: ObjectId,
+                            filme: String,
+                            valor: Number,
+                            assentos: [
+                                {
+                                    numero: Number,
+                                    disponivel: Boolean
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         }
-     ]
-  }
-     
-```
-     
+    ],
+}     
+```     
  + Tenha certeza de estar usando idFilme correspondente aos filmes cadastrados no outro micro service 'movies_service'
  + Para testar as rotas e bateria de testes deve ser feito um insert seguindo o padrão do Schema (exemplo acima)
  + execute mongod --dbpath /pasta-do-seu-microservice/data --port 27018 em seu terminal a partir do diretório bin do MongoDB
