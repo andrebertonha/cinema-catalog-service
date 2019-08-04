@@ -4,7 +4,7 @@
   
 ### Instruções 
   + Faça clone deste repositório e do movies_service 
-  + (siga as instruções do repositório https://github.com/andrebertonha/movies_service)
+  + siga as instruções do repositório: https://github.com/andrebertonha/movies_service
   + npm install
     
 ### Schema
